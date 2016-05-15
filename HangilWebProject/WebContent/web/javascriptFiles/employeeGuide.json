@@ -1,0 +1,179 @@
+﻿[
+	{
+		"department" : "직원안내",
+		"position" : "한길사의 조직 구성 및 직원 안내입니다."
+	},
+	{
+		"kind" : "한길사, 한길아트 조직 구성 및 직통 전화",
+		"kind_sub" : "(지역번호와 국번은 동일함 : 031-955-OOOO)"	
+	},
+	{
+		"department" : "대표이사",
+		"name" : "김언호",
+		"num" : "2020~1"
+	},
+	{
+		"department" : "부사장",
+		"name" : "박관순",
+		"num" : "2022~3"
+	},
+	{
+		"department" : "총괄이사",
+		"name" : "김서영",
+		"num" : "2080"
+	},
+	{
+		"department" : "관리이사",
+		"name" : "곽명호",
+		"num" : "2003"
+	},
+	{
+		"department" : "영업담당이사",
+		"name" : "이경호",
+		"num" : "2002"
+	},
+	{
+		"department" : "경영담당이사",
+		"name" : "김관영",
+		"num" : "2085"
+	},
+	{
+		"department" : "기획실",
+		"name" : "류재화",
+		"num" : "2094"
+	},
+	{
+		"department" : "편집부",
+		"name" : "백은숙",
+		"num" : "2034",
+		"position" : "실장"
+	},
+	{
+		"department" : "편집부",
+		"name" : "안민재",
+		"num" : "2039",
+		"position" : "차장"
+	},
+	{
+		"department" : "편집부",
+		"name" : "노유연",
+		"num" : "2010",
+		"position" : "과장"
+	},
+	{
+		"department" : "편집부",
+		"name" : "이지은",
+		"num" : "2016"
+	},
+	{
+		"department" : "편집부",
+		"name" : "김광연",
+		"num" : "2038"
+	},
+	{
+		"department" : "편집부",
+		"name" : "신종우",
+		"num" : "2033"
+	},
+	{
+		"department" : "편집부",
+		"name" : "원보름",
+		"num" : "2036"
+	},
+	{
+		"department" : "관리부",
+		"name" : "이중환",
+		"num" : "031-945-4222",
+		"position" : "부장"
+	},
+	{
+		"department" : "관리부",
+		"name" : "김호민",
+		"num" : "2090",
+		"position" : "과장"
+	},
+	{
+		"department" : "관리부",
+		"name" : "김선희",
+		"num" : "031-945-4222",
+		"position" : "과장"
+	},
+	{
+		"department" : "관리부",
+		"name" : "원선아",
+		"num" : "2000"
+	},
+	{
+		"department" : "마케팅",
+		"name" : "윤민영",
+		"num" : "2008"
+	},
+	{
+		"kind" : "자매회사",
+		"kind_sub" : "(지역번호와 국번은 동일함)"	
+	},
+	{
+		"department" : "한길책박물관",
+		"name" : "임예나",
+		"num" : "031-949-9786",
+		"position" : "에듀케이터"
+	},
+	{
+		"department" : "소년한길 ,토마토하우스, 아일랜드 편집부",
+		"name" : "홍희정",
+		"num" : "2088",
+		"position" : "과장"
+	},
+	{
+		"department" : "소년한길 ,토마토하우스, 아일랜드 편집부",
+		"name" : "이인영",
+		"num" : "2086"
+	},
+	{
+		"department" : "디자인그룹 창포",
+		"name" : "강홍주",
+		"num" : "2082",
+		"position" : "실장"
+	},
+	{
+		"department" : "디자인그룹 창포",
+		"name" : "김태수",
+		"num" : "2070"
+	},
+	{
+		"department" : "디자인그룹 창포",
+		"name" : "이창욱",
+		"num" : "2072"
+	},
+	{
+		"department" : "디자인그룹 창포",
+		"name" : "정은영",
+		"num" : "2087"
+	},
+	{
+		"department" : "디자인그룹 창포",
+		"name" : "민희라",
+		"num" : "2081"
+	},
+	{
+		"department" : "책방한길",
+		"name" : "양승미",
+		"num" : "2060"
+	},
+	{
+		"kind" : "한길사 블로그",
+		"kind_link" : "http://blog.naver.com/hangilsabook"	
+	},
+	{
+		"kind" : "E-mail 한길사",
+		"kind_mail" : "hangilsa@hangilsa.co.kr"	
+	},
+	{
+		"kind" : "E-mail 한길아트",
+		"kind_mail" : "hangilart@hangilsa.co.kr"	
+	},
+	{
+		"kind" : "E-mail 소년한길",
+		"kind_mail" : "sonyunhangil@sonyunhangil.co.kr"	
+	}
+]

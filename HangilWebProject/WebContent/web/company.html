@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>한길사</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cssFiles/index-theme.css" rel="stylesheet">
+    <link href="cssFiles/login-style.css" rel="stylesheet">
+    <link href="cssFiles/introduce.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <!-- 상단메뉴입니다! -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">한길사</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-expanded="false">도서안내
+							<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">총 도서목록</a></li>
+							<li class="divider"></li>
+							<!-- <li class="dropdown-header">Nav header</li> -->
+							<li><a href="#">새로나온 책</a></li>
+							<li><a href="#">수상 및 선정도서</a></li>
+							<li><a href="authors.html">한길사의 저자들</a></li>
+						</ul></li>
+					<li><a href="#about">자료실</a></li>
+					<li class="active"><a href="company.html">회사소개</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#join" class="signBtns"><span
+							class="glyphicon glyphicon-user"></span> 회원가입</a></li>
+					<li><a href="#sign" class="signBtns"><span
+							class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
+					<!--signup" data-toggle="modal" data-target=".bs-modal-sm"-->
+				</ul>
+	      
+	      <!-- 추가된 검색메뉴 -->
+          <ul class="nav navbar-nav navbar-right">
+		  <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="search">검색 <b class="caret"></b></a>
+		    <div class="dropdown-menu">
+		      <form style="margin: 0; padding: 3px 15px" accept-charset="utf-8" method="post" onsubmit="return false">
+		        <fieldset class="control-group">
+		          <div class="controls">
+		            <div class="form-group has-feedback">
+					    <input type="text" class="form-control" id="inputToFucus"/>
+					    <i class="glyphicon glyphicon-search form-control-feedback"></i>
+					</div>
+		          </div>
+		        </fieldset>
+		      </form>
+		    </div>
+		  </li>
+		</ul>
+	      <!-- 추가된 검색메뉴 끝 -->
+		
+        </div>
+      </div>
+    </nav>
+
+    <!-- container안에 만들 페이지를 작성해 주세요! -->
+    
+    <!-- 로그인을 위한 컨테이너 -->
+    <div id="container2">
+    
+    </div>
+    <div class="container theme-showcase" role="main" id="container">
+	
+	<!-- 여기부터 시작하시면 됩니다! -->
+     <div class="jumbotron">
+		<div class="introduce_company">
+			<div class="introduce_nav">
+				<h2>회사소개</h2>
+				<ul class="introduce_nav_menu nav nav-pills"><!-- list-unstyled list-inline  -->
+					<li id="firstIntroduce_page" class="active"><a href="#representativGreeting">대표인사말</a></li><!--  -->
+					<li><a href="#majorHistory">주요연혁</a></li>
+					<li><a href="#lookAtBooksOfHangil">책으로 보는 한길사</a></li>
+					<li><a href="#direction">찾아오시는 길</a></li>
+					<li><a href="#employeeGuide">직원안내</a></li>
+				</ul>
+			</div>
+			<div id="introduce_contents"></div>
+		</div>
+        <!-- <h1>예제 페이지 입니다.</h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;이번 프로젝트는 웹표준을 지키지 않은 한길사 페이지를 홈페이지를 웹표준을 지킨 페이지로 리뉴얼 하는 것입니다.<br><br>&nbsp;&nbsp;&nbsp;&nbsp; 지금 보고 있는 이 페이지는 부트스트렙에 있는 탬플릿을 사용했습니다. 이 레이아웃을 기반으로 한길사에 어울리는 디자인으로 변경하는 작업을 하려합니다. 현 상태에서 변경하길 원하는 부분과 새로이 적용하고 싶은 부분과 관련된 의견은 언제든지 연락주시길 바랍니다.<br>&nbsp;&nbsp;&nbsp;&nbsp; 작업을 하실때는 web폴더에 새로운 html파일을 만들어서 index.html파일 내용을 전부 복사한 후 붙여 넣고 컨테이너 안에 표시한 영역 안에서 마음껏 페이지를 제작하시면 됩니다. jQuery파일은 javascriptFiles폴더에 위치하고 있으며 각자 생성한 javascript파일은 이 javascriptFiles폴더에 저장하면 됩니다. <br>&nbsp;&nbsp;&nbsp;&nbsp; 부트스트랩을 이용하여 반응성 웹이 되도록 클레스에 부트스트랩 기능을 지정해 주세요. 자신만의 스타일을 적용하고 싶을 때는 cssFiles폴더에 css파일을 만들고 html 20번째 줄 바로 아래에 파일 경로를 추가해주시면 됩니다. 단, 스타일을 적용 할 때는 컨테이너 내부의 스타일만 적용해주시길 바랍니다. <br>&nbsp;&nbsp;&nbsp;&nbsp; 저희 git 저장소의 주소는 <a href="https://github.com/eigen94/HanGilWeb.git">이곳!</a> 이고, 이클립스에 깃허브 연동을 못했으면 저장소 페이지 우측에 있는 Download ZIP을 누르면 저장소에 저장되어 있는 파일을 압축한 압축파일을 다운받을 수 있습니다. 파일업로드는 업로드 하려는 해당 폴더로 이동 후에 화면 중앙에 있는 UploadFile을 이용하여 업로드 하면 되고, 수정, 삭제하려는 파일은 대상 파일을 선택 후에 수정, 삭제를 하면 됩니다. 다들 마지막 프로젝트 즐겁게 진행합시다! 화이팅!</p>
+       -->
+      </div>
+	<!-- 여기까지 사용하시면 됩니다! -->
+    </div>
+    
+    <!-- 푸터가 위치할 곳 입니다! -->  
+	<footer>
+      <div class="bottom navbar-inverse navbar-default">
+    <div class="container">
+    <br/>
+    
+    <div style="font-size: 12px"><b style="font-size: 20px">한길사</b> 
+    &nbsp;&nbsp;회사소개 | 찾아오시는길 | 고객센터 | 개인정보취급방침<br/>
+
+사업자번호: 211-81-79557 통신판매업 신고번호:강남-제18575호 / 대표 : 김언호 / 개인정보관리책임자: 곽명호<br/>
+(413-120) 경기도 파주시 광인사길 37(주) 도서출판 한길사 / TEL: 031-955-2000 / FAX: 031-955-2005<br/>
+e-mail: hangilsaone@hagilsa.co.kr 
+COPYRIGHT c HANGILSACROP. ALL RIGHTS RESERVED.<br/>
+    </div>
+<br/>
+    </div>
+</div>
+      </footer>
+
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    	    <!-- 추가 삽입 -->
+    	<script type="text/javascript" src="javascriptFiles/jQuery.js"></script>
+    	
+	<script type="text/javascript">
+	$('#container2').load('login.html .modal');
+	</script>
+	<script src="javascriptFiles/jquery.min.2.0.3.js"></script>
+	<script src="javascriptFiles/jquery.min.1.11.2.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="javascriptFiles/pwstrength.js"></script>
+
+	<script type="text/javascript" src="javascriptFiles/checkPassword.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkEmail.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkId.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkName.js"></script>
+	<script type="text/javascript" src="javascriptFiles/submit.js"></script>
+	<script type="text/javascript" src="javascriptFiles/loginStart.js"></script>
+    <!-- 추가 삽입끝 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    --> <script src="javascriptFiles/introduce.js"></script>
+  </body>
+</html>

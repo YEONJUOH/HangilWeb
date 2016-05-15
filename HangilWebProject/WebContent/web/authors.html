@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+	
+	
+    <title>한길사</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cssFiles/index-themeAuthors.css" rel="stylesheet">
+    <link href="cssFiles/login-style.css" rel="stylesheet">
+    
+    <link href="cssFiles/jquery.autocomplete.css" rel="stylesheet">
+	<link href="cssFiles/authors.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body role="document">
+
+	<!-- 상단메뉴입니다! -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">한길사</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li ><a href="index.html">Home</a></li>
+					<li class="dropdown active"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-expanded="false">도서안내
+							<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">총 도서목록</a></li>
+							<li class="divider"></li>
+							<!-- <li class="dropdown-header">Nav header</li> -->
+							<li><a href="#">새로나온 책</a></li>
+							<li><a href="#">수상 및 선정도서</a></li>
+							<li><a href="authors.html">한길사의 저자들</a></li>
+						</ul></li>
+					<li><a href="#about">자료실</a></li>
+					<li><a href="company.html">회사소개</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#join" class="signBtns"><span
+							class="glyphicon glyphicon-user"></span> 회원가입</a></li>
+					<li><a href="#sign" class="signBtns"><span
+							class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
+					<!--signup" data-toggle="modal" data-target=".bs-modal-sm"-->
+				</ul>
+	      
+	      <!-- 추가된 검색메뉴 -->
+          <ul class="nav navbar-nav navbar-right">
+		  <li class="dropdown">
+		    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="search">검색 <b class="caret"></b></a>
+		    <div class="dropdown-menu">
+		      <form style="margin: 0; padding: 3px 15px" accept-charset="utf-8" method="post" onsubmit="return false">
+		        <fieldset class="control-group">
+		          <div class="controls">
+		            <div class="form-group has-feedback">
+					    <input type="text" class="form-control" id="inputToFucus"/>
+					    <i class="glyphicon glyphicon-search form-control-feedback"></i>
+					</div>
+		          </div>
+		        </fieldset>
+		      </form>
+		    </div>
+		  </li>
+		</ul>
+	      <!-- 추가된 검색메뉴 끝 -->
+		
+        </div>
+      </div>
+    </nav>
+
+	<!-- container안에 만들 페이지를 작성해 주세요! -->
+	
+    <!-- 로그인을 위한 컨테이너 -->
+    <div id="container2">
+    
+    </div>
+	<div class="container theme-showcase" role="main" id="container">
+
+		<!-- 여기부터 시작하시면 됩니다! -->
+		<div class="jumbotron">
+
+			<div class="aheader hidden-xs"></div>
+			<div class="wrapper modal-dialog">
+				<div id="title"></div>
+				<div id="contents"></div>
+				<div class="wrap-loading display-none">
+					<img src="images/img-loading.gif" alt="loading">
+				</div>
+				<div id="search" class="center">
+				<select id="selectbox">
+				<option value="title">저자</option>
+				<option value="contents">내용</option>
+				</select>
+					<input type="text" id="searchform" placeholder="검색어를 입력하세요"> <img alt="searchButton"
+						src="images/btn_search.gif" id="searchBtn">
+					 <div class="back_to_top"><img src="images/button_top.png" alt="button_top"></div> 
+				</div>
+		</div>
+	</div>
+	<!-- 여기까지 사용하시면 됩니다! -->
+	</div>
+
+	<!-- 푸터가 위치할 곳 입니다! -->
+<footer>
+      <div class="bottom navbar-inverse navbar-default">
+    <div class="container">
+    <br/>
+    
+    <div style="font-size: 12px"><b style="font-size: 20px">한길사</b> 
+    &nbsp;&nbsp;회사소개 | 찾아오시는길 | 고객센터 | 개인정보취급방침<br/>
+
+사업자번호: 211-81-79557 통신판매업 신고번호:강남-제18575호 / 대표 : 김언호 / 개인정보관리책임자: 곽명호<br/>
+(413-120) 경기도 파주시 광인사길 37(주) 도서출판 한길사 / TEL: 031-955-2000 / FAX: 031-955-2005<br/>
+e-mail: hangilsaone@hagilsa.co.kr 
+COPYRIGHT c HANGILSACROP. ALL RIGHTS RESERVED.<br/>
+    </div>
+<br/>
+    </div>
+</div>
+      </footer>
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	    <!-- 추가 삽입 -->
+    	<script type="text/javascript" src="javascriptFiles/jQuery.js"></script>
+    	
+	<script type="text/javascript">
+	$('#container2').load('login.html .modal');
+	</script>
+	<script src="javascriptFiles/jquery.min.2.0.3.js"></script>
+	<script src="javascriptFiles/jquery.min.1.11.2.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="javascriptFiles/pwstrength.js"></script>
+
+	<script type="text/javascript" src="javascriptFiles/checkPassword.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkEmail.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkId.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkName.js"></script>
+	<script type="text/javascript" src="javascriptFiles/submit.js"></script>
+	<script type="text/javascript" src="javascriptFiles/loginStart.js"></script>
+    <!-- 추가 삽입끝 -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script> -->
+    <script type="text/javascript" src="javascriptFiles/authors.js"></script>
+    <script type="text/javascript" src="javascriptFiles/jquery.highlight-5.js"></script>
+    <script type="text/javascript" src="javascriptFiles/jquery.autocomplete.js"></script>
+</body>
+</html>

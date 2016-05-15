@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+/* 추가입력 */
+#why {
+	max-height: calc(100vh - 210px);
+	overflow-y: auto;
+}
+
+.pwstrength_viewport_progress {
+	padding-top: 10px;
+}
+
+img[alt="logo"] {
+	margin-right: 40px;
+}
+
+.open {
+	padding-left: 0px;
+}
+/* 추가입력끝 */
+
+/* 모달옵션 */
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+/* 모달옵션끝 */

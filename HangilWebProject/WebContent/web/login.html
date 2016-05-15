@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+
+<title>한길사</title>
+
+<!-- Bootstrap core CSS -->
+<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+<!-- Bootstrap theme -->
+<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="cssFiles/index-theme.css" rel="stylesheet">
+<link href="cssFiles/login.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+<style type="text/css">
+#why {
+	max-height: calc(100vh - 210px);
+	overflow-y: auto;
+}
+
+.pwstrength_viewport_progress {
+	padding-top: 10px;
+}
+
+img[alt="logo"] {
+	margin-right: 40px;
+}
+
+.open {
+	padding-left: 0px;
+}
+</style>
+</head>
+
+<body>
+
+	<!-- 상단메뉴입니다! -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+					aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">한길사</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button" aria-expanded="false">도서안내
+							<span class="caret"></span>
+					</a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">총 도서목록</a></li>
+							<li class="divider"></li>
+							<!-- <li class="dropdown-header">Nav header</li> -->
+							<li><a href="#">새로나온 책</a></li>
+							<li><a href="#">수상 및 선정도서</a></li>
+							<li><a href="#">한길사의 저자들</a></li>
+						</ul></li>
+					<li><a href="#about">자료실</a></li>
+					<li><a href="#about">회사소개</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#join" class="signBtns"><span
+							class="glyphicon glyphicon-user"></span> 회원가입</a></li>
+					<li><a href="#sign" class="signBtns"><span
+							class="glyphicon glyphicon-log-in"></span> 로그인</a></li>
+					<!--signup" data-toggle="modal" data-target=".bs-modal-sm"-->
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+<!-- 	container안에 만들 페이지를 작성해 주세요! -->
+	<div class="container theme-showcase" role="main" id="container">
+
+
+		<!-- Modal -->
+		<div class="modal fade bs-modal-md" id="myModal" tabindex="-1"
+			role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-md">
+				<div class="modal-content">
+					<br>
+					<div class="bs-example bs-example-tabs">
+						<ul id="myTab" class="nav nav-tabs">
+							<li class="active myTabs"><a href="#signin"
+								data-toggle="tab">로그인</a></li>
+							<li class="myTabs"><a href="#signup" data-toggle="tab">회원
+									가입</a></li>
+							<li class="myTabs"><a href="#why" data-toggle="tab">이용
+									약관</a></li>
+							<li class="pull-right hidden-xs"><img
+								src="images/top_logo.gif" alt="logo"></li>
+						</ul>
+					</div>
+					<div class="modal-body">
+						<div id="myTabContent" class="tab-content">
+							<div class="tab-pane fade in" id="why">
+								<p>
+									제1조 (목적) <BR> 이 이용약관(이하 "약관"이라 합니다.)은 이용고객(이하 "회원"이라 합니다)이
+									한길사(이하 "회사"라 합니다)가 제공하는 웹사이트를 이용함에 있어 회사와 회원간의 권리·의무 및 책임사항을
+									규정함을 목적으로 합니다.<BR> <BR> 제2조 (약관의 명시와 개정) <BR> ①
+									회사는 이 약관의 내용과 상호, 영업소 소재지, 대표자의 성명, 사업자등록번호, 연락처(전화, 팩스, 전자우편
+									주소 등) 등을 이용자가 알 수 있도록 초기화면 또는 연결화면을 통하여 게시합니다.<BR> ② 회사는
+									약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용촉진 등에 관한 법률, 방문판매 등에 관한
+									법률, 소비자보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수 있습니다.<BR> ③ 회사는
+									약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 초기화면에 그 적용일자 7일 이전부터
+									적용일자 전일까지 공지합니다.<BR> ④ 회원은 변경된 약관이 공지된 후 15일 이내에 거부의사를 표명할
+									수 있습니다. 회원이 거부하는 경우 회사는 당해 회원과의 계약을 해지할 수 있습니다. 만약 회원이 변경된 약관이
+									공지된 후 15일 이내에 거부의사를 표시하지 않는 경우에는 동의하는 것으로 간주합니다.<BR> <BR>
+									제3조 (회원가입 및 이용계약체결 신청 등) <BR> ① 회원이 되고자 하는 자는 회사가 정한 가입
+									양식에 따라 회원정보를 기입하고 "동의함" 단추를 누르는 방법으로 회원가입 및 이용계약체결을 신청합니다. <BR>
+									② 회사는 서비스 이용계약체결 신청이 다음 각 호에 해당하는 경우에는 그 신청에 대하여 승낙 제한사유가 해소될
+									때까지 승낙을 유보할 수 있습니다.<BR> 1. 회사의 설비 여유가 없는 경우 <BR> 2.
+									회사의 기술상 일시적 지장이 있는 경우<BR> 3. 기타 회사의 귀책사유로 이용승낙이 곤란한 경우<BR>
+									③ 회원가입 및 이용계약 체결의 성립시기는 회사의 승낙이 가입신청자에게 도달한 시점으로 합니다. <BR>
+									④ 회원은 제1항의 회원정보 기재 내용에 변경이 발생한 경우, 즉시 변경사항을 정정하여 기재하여야 합니다.<BR>
+									<BR> 제4조(회원 탈퇴 및 자격 상실 등) <BR> ① 회원은 회사에 언제든지 자신의 회원
+									등록을 말소해 줄 것(탈퇴)을 요청할 수 있으며 "회사"는 위 요청을 받은 즉시 해당 이용자의 회원 등록 말소를
+									위한 절차를 밟습니다.<BR> ② 회원이 다음 각호의 사유에 해당하는 경우, 회사는 회원자격을 제한 및
+									정지시킬 수 있습니다.<BR> 1. 가입 신청 시에 허위 내용을 등록한 경우<BR> 2. 서비스
+									이용과 관련하여 회원이 부담하는 대금 등의 채무를 기일에 지급하지 않는 경우<BR> 3. 다른 사람의
+									서비스 이용을 방해하거나 그 정보를 도용하는 등 전자거래질서를 위협하는 경우 <BR> 4. 서비스를
+									이용하여 법령과 본 약관이 금지하거나 공서양속에 반하는 행위를 하는 경우 <BR> ③ 회사가 회원 자격을
+									제한·정지 시킨 후, 동일한 행위가 2회이상 반복되거나 30일이내에 그 사유가 시정되지 아니하는 경우 회사는
+									회원자격을 상실시킬 수 있습니다.<BR> ④ 회사가 회원자격을 상실시키는 경우에는 회원등록을 말소합니다.
+									이 경우 회원에게 이를 통지하고, 회원등록 말소전에 소명할 기회를 부여합니다.<BR> ⑤ 회사는 본
+									서비스를 이용하는 회원에 대하여 회원의 연령, 서비스 이용내용, 시간 및 회수 등에 따라 등급별로 세분하여 서비스
+									이용에 차등을 둘 수 있습니다.<BR> <BR> 제5조 (개인정보의 보호 및 사용) <BR>
+									① 회사는 관계법령이 정하는 바에 따라 회원 등록정보를 포함한 회원의 개인정보를 보호하기 위해 노력합니다. 회원
+									개인정보의 보호 및 사용에 대해서는 관련법령 및 회사의 개인정보보호정책이 적용됩니다. <BR> ② 회사는
+									다음과 같은 경우에 법에서 허용하는 범위 내에서 이용자의 성명, 전자우편주소 등 이용자의 개인정보를 제3자에게
+									제공할 수 있습니다.<BR> 1. 이용자가 서비스를 이용함에 있어 관련 법률을 위반하여 수사기관이나 기타
+									정부기관으로부터 정보제공을 요청받는 경우<BR> 2. 이용자의 법률위반, 본 서비스 약관위반을 포함하여
+									부정행위 확인 등의 정보보호업무를 위해 필요한 경우<BR> 3. 기타 법률에 의해 요구되는 경우<BR>
+									③ 회사의 공식사이트 이외의 웹 등에서 링크된 사이트에서는 회사의 개인정보 보호정책이 적용되지 않습니다. 또한
+									회사는 이용자의 귀책사유로 인해 노출된 정보에 대해서 일체의 책임을 지지 않습니다.<BR> <BR>
+									제6조(서비스의 제공 및 변경) <BR> ① 회사는 제공서비스의 품질 또는 기술적 사양에 대한 변경 등의
+									경우에는 장차 체결되는 계약에 의해 제공할 서비스의 내용을 변경할 수 있습니다. 이 경우 변경되는 서비스의 내용
+									및 제공일자를 명시하여 현재의 서비스의 내용을 게시한 곳에 그 제공일자 이전 7일부터 공지합니다.<BR>
+									<BR> 제7조(서비스의 이용 및 중단) <BR> ① 서비스 이용은 회사의 업무상 또는 기술상
+									특별한 지장이 없는 한 연중무휴, 1일 24시간 운영을 원칙으로 합니다. 단, 회사는 시스템 정기점검, 증설 및
+									교체를 위해 회사가 정한 날이나 시간에 서비스를 일시 중단할 수 있으며, 예정되어 있는 작업으로 인한 서비스
+									일시중단은 사전에 공지합니다.<BR> ② 회사는 긴급한 시스템 점검, 증설 및 교체 등 부득이한 사유로
+									인하여 예고없이 일시적으로 서비스를 중단할 수 있으며, 새로운 서비스로의 교체 등 회사가 적절하다고 판단하는
+									사유에 의하여 현재 제공되는 서비스를 완전히 중단할 수 있습니다.<BR> ③ 회사는 국가비상사태, 정전,
+									서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 제공이 불가능할 경우, 서비스의 전부 또는
+									일부를 제한하거나 중지할 수 있습니다. 다만 이 경우 그 사유 및 기간 등을 회원에게 사전 또는 사후에
+									공지합니다.<BR> ④ 회사는 자신이 통제할 수 없는 사유로 인한 서비스중단의 경우(시스템관리자의 고의,
+									과실 없는 디스크장애, 시스템다운 등)에 사전통지가 불가능하며 타인(PC통신회사, 기간통신사업자 등)의
+									고의,과실로 인한 시스템중단 등의 경우에는 통지하지 않습니다.<BR> ⑤ 회사는 서비스를 특정범위로
+									분할하여 각 범위별로 이용가능시간을 별도로 지정할 수 있습니다. 다만 이 경우 그 내용을 공지합니다. <BR>
+									<BR> 제8조 ( 회원의 게시물 ) <BR> ① 게시물이라 함은 게시판에 회원이 올린 글,
+									질문과 대답 등을 포함합니다. <BR> ② 회원이 게시하는 정보 ( 및 질문과 답변 ) 등으로 인해
+									발생하는 손실이나 문제는 전적으로 회원 개인의 판단에 따른 책임이며, 회사의 고의가 아닌 한, 회사는 이에 대하여
+									책임지지 않습니다. <BR> ③ 회원은 공공질서나 미풍양속에 위배되는 내용과 타인의 저작권을 포함한
+									지적재산권 및 기타 권리를 침해하는 내용물에 대하여는 등록할 수 없으며, 만일 이와 같은 내용의 게시물로 인해
+									발생하는 결과에 대한 모든 책임은 회원 본인에게 있습니다. <BR> ④ 회사는 서비스운영목적에 반한다고
+									판단되는 다음의 게시물이나 자료를 사전통지 없이 삭제하거나 이동 또는 등록을 거부 할 수 있습니다.<BR>
+									1. 다른 회원 또는 제 3자에게 심한 모욕을 주거나 명예를 손상시키는 내용인 경우<BR> 2. 공공질서
+									및 미풍양속에 위반되는 저속, 음란한 내용의 정보, 문장, 도형, 음향, 동영상을 전송, 게시하거나 링크시키는
+									경우<BR> 3. 사적인 정치적 판단이나, 종교적 견해의 내용으로 회사가 서비스성격에 부합하지 않는다고
+									판단하는 경우<BR> 4. 불법복제 또는 해킹을 조장하는 내용인 경우<BR> 5. 영리를
+									목적으로 하는 광고 등 상업적 이용이라고 판단되는 경우<BR> 6. 범죄와 결부된다고 객관적으로 인정되는
+									내용일 경우<BR> 7. 다른 이용자 또는 제 3자의 저작권 등 기타 권리를 침해하는 내용인 경우<BR>
+									8. 회사에서 규정한 게시물 원칙에 어긋나거나, 게시판 성격에 부합하지 않는 경우<BR> 9. 기타
+									관계법령에 위배된다고 판단되는 경우<BR> <BR> 제9조 (게시물에 대한 저작권 등) <BR>
+									① 회사가 작성한 저작물에 대한 저작권 기타 지적재산권은 회사에 귀속합니다.<BR> ② 회원은 서비스를
+									이용함으로써 얻은 정보를 회사의 사전 승낙없이 복제, 송신, 출판, 전송, 배포, 방송 기타 방법에 의하여
+									영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.<BR> ③ 회원이 등록한 게시물에 대한
+									저작권은 해당 저작권자에게 귀속합니다.<BR> ④ 회원은 자신이 창작, 등록한 게시물에 대하여 회사가
+									서비스를 운영, 전시, 전송배포 또는 홍보하기 위한 목적으로 다음의 각호에 행위를 할 수 있는, 세계적이고 사용료
+									없는 비독점적 사용권을 회사에게 부여합니다.<BR> 1. 회사에서 제공하는 관련 서비스 내에서 회원
+									게시물의 복제, 수정, 개조, 전시, 배포, 출판 및 2차 저작물과 편집 저작물 작성<BR> 2. 회사의
+									제휴 파트너에게 회원의 게시물 내용을 제공, 사용하게 하는 것. 단, 이 경우 회사는 회원의 아이디외에 회원의
+									별도 동의 없이 개인정보를 제공하지 않습니다.<BR> ⑤ 회원은 본 조 제4항의 사용권 부여가 회사가
+									서비스를 운영하는 동안 확정적으로 유효하며, 회원의 탈퇴 후에도 유효함에 동의합니다.<BR> ⑥ 회사는
+									본조 4항 이외에 방법으로 회원의 게시물을 상업적 이용하고자 하는 경우, 전화, 팩스, 전자우편 등의 방법을 통해
+									사전에 회원의 동의를 얻어야 합니다. 단, 회원정보에 등록된 연락처가 사실과 다르거나 회원이 회사의 연락에 응하지
+									않아 사전에 동의를 구하지 못한 경우, 회사는 사후에 동의 절차를 구할 수 있습니다. 회사가 본 항에 따라 회원의
+									게시물을 상업적으로 이용할 경우 회사는 별도의 보상제도를 운영할 수 있습니다.<BR> ⑦ 게시물에 대하여
+									제3자로부터 저작권 및 기타 권리의 침해 또는 명예훼손, 음란성 등의 이유로 이의가 제기된 경우 회사는 당해
+									게시물을 임시 삭제할 수 있으며, 이의를 제기한 자와 게시물 등록자 간에 소송, 합의 등을 통해 당해 게시물에
+									관한 법적 문제가 종결된 후 이를 근거로 회사에 신청이 있는 경우에만 상기 임시 삭제된 게시물은 다시 등록될 수
+									있습니다. <BR> <BR> 제10조 (정보의 제공) <BR> ① 회사는 회원에게
+									서비스 이용에 필요가 있다고 인정되는 각종 정보에 대해서 전자우편이나 서신우편 등의 방법으로 회원에게 제공할 수
+									있습니다.<BR> ② 회사는 서비스 개선 및 회원 대상의 서비스 소개 등의 목적으로 회원의 동의 하에
+									추가적인 개인 정보를 요구할 수 있습니다.<BR> <BR> 제11조 (회사의 의무) <BR>
+									① 회사는 회원이 희망한 서비스 제공 개시일에 특별한 사정이 없는 한 서비스를 이용할 수 있도록 하여야 합니다.<BR>
+									② 회사는 계속적이고 안정적인 서비스의 제공을 위하여 설비에 장애가 생기거나 멸실된 때에는 부득이한 사유가 없는
+									한 지체없이 이를 수리 또는 복구합니다.<BR> ③ 회사는 개인정보 보호를 위해 보안시스템을 구축하며
+									개인정보 보호정책을 공시하고 준수합니다.<BR> ④ 회사는 회원으로부터 제기되는 의견이나 불만이
+									정당하다고 객관적으로 인정될 경우에는 적절한 절차를 거쳐 즉시 처리하여야 합니다. 다만, 즉시 처리가 곤란한
+									경우는 이용자에게 그 사유와 처리일정을 통보하여야 합니다.<BR> <BR> 제12조 (회원의
+									의무) <BR> ① 이용자는 회원가입 신청 또는 회원정보 변경 시 실명으로 모든 사항을 사실에 근거하여
+									작성하여야 하며, 허위 또는 타인의 정보를 등록할 경우 일체의 권리를 주장할 수 없습니다.<BR> ②
+									회원은 본 약관에서 규정하는 사항과 기타 회사가 정한 제반 규정, 공지사항 등 회사가 공지하는 사항 및 관계법령을
+									준수하여야 하며, 기타 회사의 업무에 방해가 되는 행위, 회사의 명예를 손상시키는 행위를 해서는 안됩니다. <BR>
+									③ 회원은 주소, 연락처, 전자우편 주소 등 이용계약사항이 변경된 경우에 해당 절차를 거쳐 이를 회사에 즉시
+									알려야 합니다.<BR> ④ 회사가 관계법령 및 "개인정보 보호정책"에 의거하여 그 책임을 지는 경우를
+									제외하고 회원에게 부여된 ID의 비밀번호 관리소홀, 부정사용에 의하여 발생하는 모든 결과에 대한 책임은 회원에게
+									있습니다.<BR> ⑤ 회원은 회사의 사전 승낙 없이 서비스를 이용하여 영업활동을 할 수 없으며, 그
+									영업활동의 결과에 대해 회사는 책임을 지지 않습니다. 또한 회원은 이와 같은 영업활동으로 회사가 손해를 입은
+									경우, 회원은 회사에 대해 손해배상의무를 지며, 회사는 해당 회원에 대해 서비스 이용제한 및 적법한 절차를 거쳐
+									손해배상 등을 청구할 수 있습니다. <BR> ⑥ 회원은 회사의 명시적 동의가 없는 한 서비스의 이용권한,
+									기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없으며 이를 담보로 제공할 수 없습니다.<BR> ⑦
+									회원은 회사 및 제 3자의 지적 재산권을 침해해서는 안됩니다.<BR> ⑧ 회원은 다음 각 호에 해당하는
+									행위를 하여서는 안되며, 해당 행위를 하는 경우에 회사는 회원의 서비스 이용제한 및 적법 조치를 포함한 제재를
+									가할 수 있습니다. <BR> 1. 회원가입 신청 또는 회원정보 변경 시 허위내용을 등록하는 행위<BR>
+									2. 다른 이용자의 ID, 비밀번호를 도용하는 행위<BR> 3. 이용자 ID를 타인과 거래하는 행위<BR>
+									4. 회사의 운영진, 직원 또는 관계자를 사칭하는 행위<BR> 5. 회사로부터 특별한 권리를 부여받지
+									않고 회사의 클라이언트 프로그램을 변경하거나, 회사의 서버를 해킹하거나, 웹사이트 또는 게시된 정보의 일부분 또는
+									전체를 임의로 변경하는 행위<BR> 6. 서비스에 위해를 가하거나 고의로 방해하는 행위<BR>
+									7. 본 서비스를 통해 얻은 정보를 회사의 사전 승낙 없이 서비스 이용 외의 목적으로 복제하거나, 이를 출판 및
+									방송 등에 사용하거나, 제 3자에게 제공하는 행위<BR> 8. 공공질서 및 미풍양속에 위반되는 저속,
+									음란한 내용의 정보, 문장, 도형, 음향, 동영상을 전송, 게시, 전자우편 또는 기타의 방법으로 타인에게 유포하는
+									행위<BR> 9. 모욕적이거나 개인신상에 대한 내용이어서 타인의 명예나 프라이버시를 침해할 수 있는
+									내용을 전송, 게시, 전자우편 또는 기타의 방법으로 타인에게 유포하는 행위<BR> 10. 다른 이용자를
+									희롱 또는 위협하거나, 특정 이용자에게 지속적으로 고통 또는 불편을 주는 행위<BR> 11. 회사의
+									승인을 받지 않고 다른 사용자의 개인정보를 수집 또는 저장하는 행위<BR> 12. 범죄와 결부된다고
+									객관적으로 판단되는 행위<BR> 13. 본 약관을 포함하여 기타 회사가 정한 제반 규정 또는 이용 조건을
+									위반하는 행위<BR> 14. 기타 관계법령에 위배되는 행위<BR> <BR> 제13조 (
+									책임 ) <BR> ① 회사는 서비스 이용과 관련하여 회사의 고의 또는 중과실이 없는 한 회원에게 발생한
+									어떠한 손해에 대해서도 책임을 지지 않습니다. 회사는 서비스 이용과 관련한 정보, 제품, 서비스, 소프트웨어,
+									그래픽, 음성, 동영상의 적합성, 정확성, 시의성, 신빙성에 관한 보증 또는 담보책임을 부담하지 않습니다. <BR>
+									② 회사는 회원들의 게시물을 pre-screening 하지 아니하고, 상시적으로 게시물의 내용을 확인하거나
+									검토하지 아니하며, 이에 대한 의무나 그 결과에 대한 책임을 지지 아니합니다. <BR> <BR>
+									제14조 ( 계약해지 ) <BR> ① 회원은 운영자에게 메일을 통해서 회원정보처리에 관한 불만사항을
+									개진할 수 있습니다. <BR> ② 회원이 서비스 이용 계약을 해지하고자 할 때는 "마이페이지 >
+									회원탈퇴"에서 탈퇴 신청을 해야 합니다. <BR> <BR> 제15조 (면책조항)<BR>
+									① 회사는 천재지변, 전쟁 및 기타 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스
+									제공에 대한 책임이 면제됩니다.<BR> ② 회사는 기간통신 사업자가 전기통신 서비스를 중지하거나
+									정상적으로 제공하지 아니하여 손해가 발생한 경우 책임이 면제됩니다.<BR> ③ 회사는 서비스용 설비의
+									보수, 교체, 정기점검, 공사 등 부득이한 사유로 발생한 손해에 대한 책임이 면제됩니다.<BR> ④
+									회사는 회원의 귀책사유로 인한 서비스 이용의 장애 또는 손해에 대하여 책임을 지지 않습니다.<BR> ⑤
+									회사는 이용자의 컴퓨터 오류에 의해 손해가 발생한 경우, 또는 회원이 신상정보 및 전자우편 주소를 부실하게
+									기재하여 손해가 발생한 경우 책임을 지지 않습니다.<BR> ⑥ 회사는 회원이 서비스를 이용하여 기대하는
+									수익을 얻지 못하거나 상실한 것에 대하여 책임을 지지 않습니다.<BR> ⑦ 회사는 회원이 서비스를
+									이용하면서 얻은 자료로 인한 손해에 대하여 책임을 지지 않습니다. 또한 회사는 회원이 서비스를 이용하며 타
+									회원으로 인해 입게 되는 정신적 피해에 대하여 보상할 책임을 지지 않습니다.<BR> ⑧ 회사는 회원이
+									서비스에 게재한 각종 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대하여 책임을 지지 않습니다.<BR>
+									⑨ 회사는 이용자 상호간 및 이용자와 제 3자 상호 간에 서비스를 매개로 발생한 분쟁에 대해 개입할 의무가
+									없으며, 이로 인한 손해를 배상할 책임도 없습니다.<BR> ⑩ 회사에서 회원에게 무료로 제공하는 서비스의
+									이용과 관련해서는 어떠한 손해도 책임을 지지 않습니다.<BR> <BR> 제16조(통지) <BR>
+									① 회사가 회원에 대한 통지를 하는 경우, 회원이 회사에 제출한 전자우편 주소로 할 수 있습니다.<BR>
+									<BR> 제17조 (재판권 및 준거법) <BR> ① 이 약관에 명시되지 않은 사항은
+									전기통신사업법 등 관계법령과 상관습에 따릅니다.<BR> ② 서비스 이용으로 발생한 분쟁에 대해 소송이
+									제기되는 경우 회사의 본사 소재지를 관할하는 법원을 관할 법원으로 합니다.<BR> <BR>
+									&lt;부칙&gt;<BR> (시행일) 본 약관은 2007년 07월 23일부터 적용됩니다.
+								</p>
+							</div>
+							<div class="tab-pane fade active in" id="signin">
+								<form class="form-horizontal">
+									<fieldset>
+										<!-- Sign In Form Text input -->
+										<div class="control-group">
+
+											<label class="control-label" for="userid">ID:</label> <input
+												 id="userid" name="userid" type="text"
+												class="form-control input-medium" placeholder="JoeSixpack">
+
+										</div>
+
+										<!-- Password input -->
+										<div class="control-group">
+
+											<label class="control-label" for="passwordinput">Password:</label>
+											<div class="controls">
+												<input id="passwordinput" name="passwordinput"
+													class="form-control input-medium" type="password"
+													placeholder="********">
+											</div>
+
+										</div>
+
+
+
+
+										<!-- Button -->
+										<div class="control-group">
+											<label class="control-label"></label>
+											<div class="controls">
+
+												<button id="signinButton" name="signin"
+													class="btn btn-danger">Sign In</button>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+							<div class="tab-pane fade" id="signup">
+								<form class="form-horizontal">
+									<fieldset>
+										<!-- Sign Up Form Text input -->
+										<div class="control-group">
+											<label class="control-label" for="Email">Email:</label>
+											<div class="row">
+												<div class="controls">
+													<div class="col-md-5 col-xs-5">
+														<input id="Email" name="Email"
+															class="form-control input-large" type="text"
+															placeholder="JoeSixpack">
+
+													</div>
+
+													<div class="col-md-7 col-xs-7">
+														<input id="domain" name="domain"
+															class="form-control dropdown input-large"
+															autocomplete="off" type="text"
+															placeholder="@sixpacksrus.com" data-toggle="dropdown">
+														<ul class="dropdown-menu" role="menu">
+															<li role="presentation"><a role="menuitem"
+																tabindex="-1" href="#">@naver.com</a></li>
+															<li role="presentation"><a role="menuitem"
+																tabindex="-1" href="#">@daum.net</a></li>
+															<li role="presentation"><a role="menuitem"
+																tabindex="-1" href="#">@google.com</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<!-- Text input -->
+										<div class="control-group">
+											<label class="control-label" for="userid">ID:</label>
+											<div class="controls">
+												<input id="useridTmp" name="useridTmp"
+													class="form-control input-large" type="text"
+													placeholder="JoeSixpack"> <em id="emId"></em>
+											</div>
+										</div>
+
+										<!-- Text input -->
+										<div class="control-group">
+
+
+											<div class="controls">
+												<label class="control-label">NAME:</label> <input
+													id="username" name="username"
+													class="form-control input-large" type="text"
+													placeholder="Joe">
+											</div>
+										</div>
+
+										<!-- Password input -->
+										<div class="control-group">
+											<label class="control-label" for="password">Password:</label>
+											<div class="controls" id="pwd-container">
+												<input id="password" name="password"
+													class="form-control input-large" type="password"
+													placeholder="********">
+												<div class="pwstrength_viewport_progress"></div>
+											</div>
+										</div>
+
+										<!-- Text input -->
+										<div class="control-group">
+											<label class="control-label" for="reenterpassword">Re-Enter
+												Password:</label>
+											<div class="controls">
+												<input id="reenterpassword" class="form-control input-large"
+													name="reenterpassword" type="password"
+													placeholder="********"> <em id="emPwd"></em>
+											</div>
+										</div>
+
+
+										<!-- Button -->
+										<div class="control-group">
+											<label class="control-label" for="confirmsignup"></label>
+											<div class="controls">
+												<button id="confirmsignup" name="confirmsignup"
+													class="btn btn-danger">Sign Up</button>
+
+											</div>
+										</div>
+
+
+									</fieldset>
+								</form>
+
+							</div>
+							<div id="success" class="tab-pane fade"
+								style="text-align: center;">
+								<img src="images/logo2.PNG" alt="logo2"
+									style="padding-top: 20px;">
+								<p
+									style="font-size: 20px; font-weight: bold; font-family: 맑은 고딕; text-align: center; padding-top: 10px;">회원
+									가입 성공</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer" style="text-align: center">
+
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- 여기까지 사용하시면 됩니다! -->
+
+		<!-- 푸터가 위치할 곳 입니다! -->
+
+
+		<footer>
+			<p>&copy; kosta111기 2016</p>
+		</footer>
+	</div>
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="javascriptFiles/jQuery.js"></script>
+	<script
+		src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="javascriptFiles/pwstrength.js"></script>
+
+	<script type="text/javascript" src="javascriptFiles/checkPassword.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkEmail.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkId.js"></script>
+	<script type="text/javascript" src="javascriptFiles/checkName.js"></script>
+	<script type="text/javascript" src="javascriptFiles/submit.js"></script>
+	<script type="text/javascript" src="javascriptFiles/loginStart.js"></script>
+</body>
+</html>

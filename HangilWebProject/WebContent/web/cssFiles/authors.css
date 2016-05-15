@@ -1,0 +1,63 @@
+@CHARSET "EUC-KR";
+    body{
+    	font-family: ¸¼Àº °íµñ;
+    }
+    .back_to_top{	
+    	position:fixed;
+    	bottom:0;
+    	left:50%;
+    	margin-left:37%;
+    	display:none;
+    	border: none;
+    }  
+    .back_to_top:hover{
+    	cursor:pointer;
+    }
+	#contents .box p{
+		font-size: 11px;
+	}
+	#contents .box .pfont{
+		padding-top : 20px;
+		border-bottom:1px solid grey;
+		font-weight: bold;
+		font-size: 14px;
+		padding-bottom : 1%;
+	}
+	.center{
+		text-align: center;
+	}
+	#search{
+		margin-top: 4%;
+	}
+	.aheader{
+		background:url("../images/writer_top_img.gif") no-repeat;
+		border-left:3px solid red;
+		padding:2%;
+	}
+	#title{
+		margin-bottom:3%;
+	}
+    .display-none{ 
+        display:none;
+    }
+    #searchform{
+    	font-size:11px;
+    }
+    #selectbox{
+    	font-size:11px;
+    }
+    .wrap-loading{
+    	position:fixed;
+    	bottom:20%;
+    	left:33%;
+    }
+    .highlight {
+    	background-color: yellow 
+    }
+    #search .xdsoft_autocomplete .xdsoft_autocomplete_dropdown{
+        font-size:11px;
+    }
+    #search .xdsoft_autocomplete .xdsoft_autocomplete_dropdown .active{
+    	background-color: grey;
+    	color : white;
+    } 
